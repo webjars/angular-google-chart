@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -12,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-google-chart</artifactId>
-    <version>0.0.8-SNAPSHOT</version>
+    <version>0.0.8</version>
     <name>Google Chart Tools Directive Module</name>
     <description>Webjar for Google Chart Tools Directive Module</description>
 
@@ -36,7 +35,7 @@
         <url>http://github.com/webjars/angular-google-chart</url>
         <connection>scm:git:https://github.com/webjars/angular-google-chart.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/angular-google-chart.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>angular-google-chart-0.0.8</tag>
     </scm>
 
     <dependencies>
@@ -87,12 +86,10 @@
                         <configuration>
                             <target>
                                 <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip"
-                                    dest="${project.build.directory}" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset
-                                        dir="${project.build.directory}/${project.artifactId}-${upstream.version}" includes="bower.json,ng-*.js" />
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${upstream.version}" includes="bower.json,ng-*.js" />
                                 </move>
                             </target>
                         </configuration>
