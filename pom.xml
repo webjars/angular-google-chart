@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-google-chart</artifactId>
-    <version>0.1.0.1-SNAPSHOT</version>
+    <version>0.1.0-1-SNAPSHOT</version>
     <name>Google Chart Tools Directive Module</name>
     <description>Webjar for Google Chart Tools Directive Module</description>
 
